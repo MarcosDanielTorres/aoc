@@ -1,0 +1,15 @@
+[workspace]
+resolver = "2"
+members = ["day*"]
+
+[workspace.dependencies]
+dhat = "0.3.2"
+criterion = { version = "0.4", features = ["html_reports"] }
+
+[profile.flamegraph]
+inherits = "release"
+debug = true
+
+[profil.dhat]
+inherits = "release"
+debug = 1

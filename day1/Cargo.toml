@@ -1,0 +1,23 @@
+[package]
+name = "day1"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+dhat.workspace = true
+
+
+[[bench]]
+name = "day-01-bench"
+path = "benches/benchmarks.rs"
+harness = false
+
+[[bench]]
+name = "day-01-bench-criterion"
+path = "benches/benchmarks-criterion.rs"
+harness = false
+
+[features]
+dhat-heap = []
